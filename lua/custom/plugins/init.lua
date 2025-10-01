@@ -19,12 +19,4 @@ return {
       vim.cmd.colorscheme 'gruvbox'
     end,
   },
-  {
-    'rcarriga/nvim-notify',
-    priority = 100,
-    config = function()
-      require('notify').setup()
-      vim.notify = require 'notify'
-    end,
-  },
 }

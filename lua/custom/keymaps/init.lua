@@ -16,6 +16,6 @@ end
 return {
   {
     vim.keymap.set('n', '<leader>tt', ToggleTerm, { desc = 'toggles horizontal terminal' }),
-    vim.keymap.set('n', '<leader>bd', ':bd', { desc = 'Buffer delete ' }),
+    vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = 'Buffer delete ' }),
   },
 }
