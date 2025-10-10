@@ -12,7 +12,7 @@
 ========         ||                    ||   |-----|          ========
 ========         ||:Tutor              ||   |:::::|          ========
 ========         |'-..................-'|   |____o|          ========
-========         `"")----------------(""`   ___________      ========
+========         `"")----------------t (""`   ___________      ========
 ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
 ========       /:::========|  |==hjkl==:::\  \ required \    ========
 ========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
@@ -927,6 +927,20 @@ require('lazy').setup({
       require('mini.surround').setup()
 
       require('mini.notify').setup()
+
+      require('mini.pairs').setup()
+
+      require('mini.files').setup()
+
+      require('mini.starter').setup()
+
+      require('mini.tabline').setup()
+
+      require('mini.git').setup()
+
+      require('mini.animate').setup()
+
+      require('mini.move').setup()
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
@@ -992,7 +1006,8 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  { import = 'custom' },
+  { import = 'custom.plugins' },
+  { import = 'custom.keymaps' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
